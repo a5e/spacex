@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Launch number 3 should be selected 1`] = `
+<section
+  className="mission_list"
+>
+  <ul>
+    <li
+      className="mission_list_item"
+      data-flight-number={1}
+      onClick={[Function]}
+    >
+      <img
+        alt="FalconSat mission's patch"
+        src="https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png"
+      />
+       
+      FalconSat
+    </li>
+    <li
+      className="mission_list_item"
+      data-flight-number={2}
+      onClick={[Function]}
+    >
+      <img
+        alt="DemoSat mission's patch"
+        src="https://images2.imgbox.com/4f/e3/I0lkuJ2e_o.png"
+      />
+       
+      DemoSat
+    </li>
+    <li
+      className="mission_list_item selected"
+      data-flight-number={3}
+      onClick={[Function]}
+    >
+      <img
+        alt="Trailblazer mission's patch"
+        src="https://images2.imgbox.com/3d/86/cnu0pan8_o.png"
+      />
+       
+      Trailblazer
+    </li>
+  </ul>
+</section>
+`;
+
+exports[`LaunchList should have 3 items 1`] = `
+<section
+  className="mission_list"
+>
+  <ul>
+    <li
+      className="mission_list_item"
+      data-flight-number={1}
+      onClick={[Function]}
+    >
+      <img
+        alt="FalconSat mission's patch"
+        src="https://images2.imgbox.com/3c/0e/T8iJcSN3_o.png"
+      />
+       
+      FalconSat
+    </li>
+    <li
+      className="mission_list_item selected"
+      data-flight-number={2}
+      onClick={[Function]}
+    >
+      <img
+        alt="DemoSat mission's patch"
+        src="https://images2.imgbox.com/4f/e3/I0lkuJ2e_o.png"
+      />
+       
+      DemoSat
+    </li>
+    <li
+      className="mission_list_item"
+      data-flight-number={3}
+      onClick={[Function]}
+    >
+      <img
+        alt="Trailblazer mission's patch"
+        src="https://images2.imgbox.com/3d/86/cnu0pan8_o.png"
+      />
+       
+      Trailblazer
+    </li>
+  </ul>
+</section>
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LaunchListItem displays a patch and title 1`] = `
+<li
+  className="mission_list_item"
+  data-flight-number={82}
+  onClick={[Function]}
+>
+  <img
+    alt="CRS-18 mission's patch"
+    src="https://i.imgur.com/X2shYek.png"
+  />
+   
+  CRS-18
+</li>
+`;
+
+exports[`LaunchListItem should have selected class if selected 1`] = `
+<li
+  className="mission_list_item selected"
+  data-flight-number={82}
+  onClick={[Function]}
+>
+  <img
+    alt="CRS-18 mission's patch"
+    src="https://i.imgur.com/X2shYek.png"
+  />
+   
+  CRS-18
+</li>
+`;
