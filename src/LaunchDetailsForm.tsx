@@ -18,7 +18,7 @@ export default function LaunchDetailsForm(props: {launch: ILaunch, handleCancel:
   const validate = (launch:ILaunch) => {
     let errors = [];
     
-    if (Number.isInteger(Number(launch.flight_number))){
+    if (!Number.isInteger(Number(launch.flight_number))){
       errors.push({
         fieldName: "flight_number",
         message: "Please enter an integer"
