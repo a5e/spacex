@@ -27,7 +27,7 @@ export default function LaunchDetailsForm(props: {launch: ILaunch, handleCancel:
     if (launch.mission_name === '') {
       errors.push({
         fieldName: "mission_name",
-        message: "Please enter an mission_name"
+        message: "Please enter a mission_name"
       });
     }
 
@@ -59,6 +59,7 @@ export default function LaunchDetailsForm(props: {launch: ILaunch, handleCancel:
       })
       .join()
   }
+
   return (
     <section className="mission_details_form">
       <h1>Edit Form</h1>
