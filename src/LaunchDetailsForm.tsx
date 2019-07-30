@@ -101,7 +101,6 @@ export default function LaunchDetailsForm(props: {launch: ILaunch, handleCancel:
 
   return (
     <section className="mission_details_form">
-      <h1>Edit Form</h1>
       <form onSubmit={handleSubmit}>
         <label>Mission</label>
         <input 
