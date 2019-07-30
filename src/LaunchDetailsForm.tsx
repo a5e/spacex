@@ -57,7 +57,6 @@ export default function LaunchDetailsForm(props: {launch: ILaunch, handleCancel:
       .map((e)=> {
         return <span>{e.message}</span>
       })
-      .join()
   }
 
   return (
