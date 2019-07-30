@@ -35,6 +35,13 @@ export default function LaunchDetailsForm(props: {launch: ILaunch, handleCancel:
     message: (field_name:string) => `Please enter an integer for ${field_name}`
   }
 
+  const isInRangeRule = (start:number, end:number) => {
+    return {
+      condition: (value:string) => (Number(value) < start || Number(value) > end),
+      message: (field_name:string) => `Should be between ${start} and ${end}`
+    }
+  }
+
   const validate = (launch:any, appliedRules:IAppliedRule[]) => {
     let errors: IError[]= [];
 
@@ -60,6 +67,10 @@ export default function LaunchDetailsForm(props: {launch: ILaunch, handleCancel:
     {
       rule: isIntegerRule,
       fields: ["flight_number"]
+    },
+    {
+      rule: isInRangeRule(2006, new Date().getFullYear()),
+      fields: ["year"]
     }
   ]
 
